@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Responsive Navbar</title>
 </head>
 <body>
+    <header>
     <nav class="navbar">
 
         <ul class="sidebar">
@@ -21,13 +23,77 @@
         <ul>
             <li><a href="#">Logo.</a></li>
             <li class="hide-on-mob"><a href="#">Home</a></li>
-            <li class="hide-on-mob"><a href="#">Blog</a></li>
-            <li class="hide-on-mob"><a href="#">Services</a></li>
-            <li class="hide-on-mob"><a href="#">Contact</a></li>
-            <li class="hide-on-mob"><a href="#">Forum</a></li>
+            <li class="hide-on-mob"><a href="#blog">Blog</a></li>
+            <li class="hide-on-mob"><a href="#serv">Services</a></li>
+            <li class="hide-on-mob"><a href="#cont">Contact</a></li>
+            <li class="hide-on-mob"><a href="#forum">Forum</a></li>
             <li class="menu-btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
+</header>
+    <section class="home" id="home">
+    </section>
+    <section class="blog" id="blog">
+        <h1>Blog.</h1>
+    </section>
+    <section class="service" id="serv">
+        <h1>Services.</h1>
+    </section>
+    <section class="contact" id="cont">
+        <h1>Contact.</h1>
+    </section>
+    <section class="forum" id="forum">
+        <h1>Forum.</h1>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affilates Program</a></li>
+                        </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                        <ul>
+                            <li><a href="#">Watch</a></li>
+                            <li><a href="#">Bag</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Dresses</a></li>
+                        </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                        <div class="social">
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#"><i class='bx bxl-telegram' ></i></a>
+                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         function showSidebar(){
