@@ -17,9 +17,20 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb{
+    background : #24262b;
+    border-radius: 50px;
+}
 header{
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 nav{
     background-color: white;
